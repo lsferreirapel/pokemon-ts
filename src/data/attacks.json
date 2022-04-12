@@ -1,0 +1,37 @@
+{
+  "pokemons": [
+    {
+      "name": "charmander",
+      "type": "FIRE",
+      "HP": 40,
+      "DMG": 60,
+      "SPD": 65
+    },
+    {
+      "name": "squirtle",
+      "type": "WATER",
+      "HP": 55,
+      "DMG": 50,
+      "SPD": 43
+    },
+    {
+      "name": "bulbasaur",
+      "type": "GRASS",
+      "HP": 45,
+      "DMG": 65,
+      "SPD": 45
+    }
+  ],
+  "attacks": [
+    {
+      "name": "tackle",
+      "damage": 10,
+      "type": "NORMAL"
+    },
+    {
+      "name": "ember",
+      "damage": 30,
+      "type": "FIRE"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="overlapping"></div>
+      <!-- Health bars -->
+      <div class="health-bar enemy-health-bar ui">
+        <h1>rattata</h1>
+        <div class="health-bar-container">
+          <div class="empty-health-bar"></div>
+          <div id="enemy-health-bar" class="full-health-bar"></div>
+        </div>
+      </div>
+      <div class="health-bar player-health-bar ui">
+        <h1>charmander</h1>
+        <div class="health-bar-container">
+          <div class="empty-health-bar"></div>
+          <div id="player-health-bar" class="full-health-bar"></div>
+        </div>
+      </div>
+      <!-- END Health bars -->
+
+      <canvas></canvas>
+
+      <!-- Attack selection  -->
+      <div class="rectangle ui">
+        <div id="battle-dialog-box">
+          <div id="battle-dialog-text">
+            NIDOKING used <br />
+            ROCK SLIDE!
+          </div>
+        </div>
+        <div id="attack-bar-list">
+          <!-- <button class="">tackle</button>
+          <button class="">ember</button>
+          <button class="">growl</button>
+          <button class="">vine whip</button> -->
+        </div>
+        <div class="attack-bar-info">
+          <div class="pp-info-container">
+            <h2>PP</h2>
+            <h1 id="move-pp">23/35</h1>
+          </div>
+          <div class="type-info-container">
+            <h2>Type/</h2>
+            <h1 id="move-type">NORMAL</h1>
+          </div>
+        </div>
+      </div>
+      <!-- END Attack selection  -->
+    </div>
+    <script src="https://unpkg.com/gifler@0.1.0/gifler.min.js"></script>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/app.ts"></script>
+  </body>
+</html>
